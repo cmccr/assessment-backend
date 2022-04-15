@@ -5,11 +5,11 @@ const students = [
     },
     {
         id: 2,
-        name: 'Jake'
+        name: 'Alex'
     },
     {
         id: 3,
-        name: 'Seth'
+        name: 'Brendon'
     },
     {
         id: 4,
@@ -23,7 +23,7 @@ const students = [
 
 let globalId = 6
 
-modeule.exports = {
+module.exports = {
     getStudents: (req, res) => {
         res.status(200).send(students)
     },
@@ -41,6 +41,6 @@ modeule.exports = {
     },
     deleteStudent: (req, res) => {
         const { id } = e.target.value
-        const 
+    
     }
 }

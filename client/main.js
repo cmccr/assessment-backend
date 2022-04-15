@@ -1,5 +1,5 @@
 const fortuneButton = document.querySelector('#fortuneButton');
-
+console.log(fortuneButton)
 const studentContainer = document.querySelector('#student-container')
 
 const renderStudents = (data) => {
@@ -17,7 +17,7 @@ const renderStudents = (data) => {
 }
 
 const getFortune = () => {
-    axios.get('https://localhost:4000/api/fortune')
+    axios.get('http://localhost:4000/api/fortune')
     .then((res) => alert(res.data))
     .catch((err) => console.log(err));
 };
@@ -60,4 +60,4 @@ const handleDelete = (e) => {
 
 submitBtn.addEventListener('click', addNewStudent)
 
-document.querySelector('p').addEventListener('click', handleDelete)
+// document.querySelector('p').addEventListener('click', handleDelete)
