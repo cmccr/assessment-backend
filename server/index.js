@@ -14,9 +14,9 @@ app.get("/api/compliment", getCompliment);
 
 app.get("/api/fortune", getFortune);
 
-// app.get("/api/student", getStudents);
-// app.post("/api/student", addStudent);
+app.get("/api/student", getStudents);
+app.post("/api/student", addStudent);
 // app.put("/api/student", updateStudent);
-// app.delete("/api/student", deleteStudent)
+app.delete("/api/student", deleteStudent)
 
 app.listen(4000, () => console.log("Server running on 4000"));

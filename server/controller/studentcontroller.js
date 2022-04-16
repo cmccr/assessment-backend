@@ -40,7 +40,10 @@ module.exports = {
 
     },
     deleteStudent: (req, res) => {
-        const { id } = e.target.value
-    
+        const student = students.filter(e => {
+            return e.id === req.params.id
+        })
+        students.splice(student, 1)
+        res.status(200).send(students)
     }
 }
